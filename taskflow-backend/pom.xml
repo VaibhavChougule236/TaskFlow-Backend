@@ -162,6 +162,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>taskflow-backend</finalName>
 	</build>
 
 </project>
