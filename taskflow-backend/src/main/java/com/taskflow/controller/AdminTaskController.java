@@ -24,7 +24,7 @@ import java.util.List;
 @CrossOrigin
 @PreAuthorize("hasRole('ADMIN')")
 public class AdminTaskController {
-
+ 
 	private final AdminTaskService taskService;
 
 	// Create Task
