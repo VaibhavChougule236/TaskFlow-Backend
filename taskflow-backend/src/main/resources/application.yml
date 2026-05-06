@@ -87,7 +87,6 @@
 #  level:
 #    org.springframework.security: DEBUG
 #    org.springframework.web: INFO
-
 server:
   port: ${PORT:8080}
 
@@ -106,21 +105,17 @@ spring:
       hibernate:
         format_sql: true
 
-  mail:
-    host: smtp-relay.brevo.com
-    port: 587
-    username: ${MAIL_USERNAME}
-    password: ${MAIL_PASSWORD}
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
 jwt:
   secret: ${JWT_SECRET}
   expiration: 86400000
 
 file:
   upload-dir: ${UPLOAD_DIR:/app/uploads/}
+
+
+brevo:
+  api:
+    key: ${BREVO_API_KEY}
+  sender:
+    email: developervaibhav124@gmail.com
+    name: TaskFlow
